@@ -76,4 +76,15 @@ body {
 .second-headline {
   margin: 10px 20px;
 }
-
+.about-me-list {
+	list-style: decimal;
+}
+.lang-list {
+	list-style-type: circle;
+}
+.jobs-list {
+	list-style-type: decimal;
+}
+.add-list {
+	list-style-type: disc;
+}
