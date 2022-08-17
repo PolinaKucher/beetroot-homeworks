@@ -1,0 +1,20 @@
+:root {
+  --panel-c-dark-blue: #5a8596;
+  --panel-c-blue: #9cc1cf;
+  --panel-c-violet: #f0eff8;
+  --panel-c-white: #fff;
+}
+.panel-wrapper {
+  padding: 10px;
+  background-color: var(--panel-c-blue);
+}
+.main-page-link {
+  font-size: larger;
+  color: var(--panel-c-white);
+}
+.main-page-link:hover {
+  color: var(--panel-c-dark-blue);
+}
+.main-page-link:visited {
+  color: var(--panel-c-violet);
+}

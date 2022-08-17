@@ -1,0 +1,16 @@
+:root {
+  /* colors */
+  --c-white: #fff;
+  --c-black: #0000;
+  --c-pink: #de88a5;  
+  --c-green: #a1c45a;
+  --c-dark-green: #476a39;
+  --c-yellow: #ffcd43;
+  --c-yellow-hover: #cb9e22;
+  --c-milk: #fffef8;
+  --c-wrapper: #f1f0e8;
+  --c-gradient: #f6fee7 ;
+  /* Font  */
+  --f-base: 14px;
+  --line-height: 1.5em;
+}

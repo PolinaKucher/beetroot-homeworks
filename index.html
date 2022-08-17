@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Main page</title>
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
+    <link rel="stylesheet" href="./lesson_3-site/styles/normalize.css" />
+    <link rel="stylesheet" href="./lesson_3-site/styles/variables.css" />
+    <link rel="stylesheet" href="./lesson_3-site/styles/main.css" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,23 +19,36 @@
   </head>
   <body>
     <div class="app">
-      <h1 class="title">Головна сторінка</h1>
-      <div class="homework">
-        <ul class="homework-list">
-          <li>
-            <!-- first html hm -->
-            <a class="link lesson-link" href="./lesson_1/lesson_1.html"
-              >Lesson 1 -html</a
-            >
-          </li>
-          <li>
-            <!-- second css hm -->
-            <a class="link lesson-link" href="./lesson_2/lesson_1.html"
-              >Lesson 2 -css</a
-            >
-          </li>
-        </ul>
-      </div>
+      <header class="header">
+        <div class="header-wrapper">
+          <h1 class="title">Головна сторінка</h1>
+        </div>
+      </header>
+      <section class="homework">
+        <div class="homework-wrapper">
+          <ul class="homework-list">
+            <li class="homework-item">
+              <!-- first html hm -->
+              <a class="lesson-link" href="./lesson_1/lesson_1.html"
+                >Lesson 1 -html</a
+              >
+            </li>
+            <li class="homework-item">
+              <!-- second css hm -->
+              <a class="lesson-link" href="./lesson_2/lesson_1.html"
+                >Lesson 2 -css</a
+              >
+            </li>
+            <li class="homework-item">
+              <a
+                href="./lesson_3-site/pages/main/main.html"
+                class="lesson-link"
+                >Lesson 3 -sematic</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
   </body>
 </html>
