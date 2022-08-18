@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <title>Figma</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="../panel.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- app -->
+    <div class="app">
+      <!-- Panel -->
+			<div class="panel">
+				<div class="panel-wrapper">
+					<ul class="panel-list">
+						<il class="panel-item">
+							<a class="main-page-link" href="../../../index.html">На головну</a>
+						</il>
+					</ul>
+				</div>
+			</div>
+      <!-- *Header -->
+      <header class="header">
+        <div class="wrapper header-wrapper">
+          <!-- Navigation -->
+          <nav class="header-navigation">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#home">Home</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#about">About me</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#skills">Skills</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#footer">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- home section -->
+      <section id="home" class="home">
+        <div class="wrapper home-wrapper">
+          <h1>Denis Novik</h1>
+          <!-- img -->
+          <div class="img-wrapper">
+            <img
+              class="home-photo"
+              src="./assets/photox940.jpg"
+              alt="Home Photo"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- about section -->
+      <section id="about" class="about">
+        <div class="wrapper about-wrapper">
+          <h2 class="about-title">About me</h2>
+          <div class="about-text-wrapper">
+            <p class="about-text">
+              Hi, I'm Denis – UX/UI designer from Minsk. <br />
+              I'm interested in design and everything connected with it.
+            </p>
+            <p class="about-text">
+              I'm studying at courses "Web and mobile design interfaces" in
+              IT-Academy.
+            </p>
+            <p class="about-text">
+              Ready to implement excellent projects with wonderful people.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- skills section -->
+      <section id="skills" class="skills">
+        <div class="wrapper skills-wrapper">
+          <div class="title-wrapper">
+            <h2 class="skills-title">Skills</h2>
+            <span class="skills-text">I work in such programs as</span>
+          </div>
+          <!-- skills block -->
+          <div class="block-wrapper">
+            <div class="skills-block">
+              <img src="./assets/PS.svg" alt="Photoshop" class="skills-ico" />
+              <span class="ico-text">Adobe Photoshop</span>
+              <img
+                src="./assets/ratingpPS.svg"
+                alt="Rating Photoshop"
+                class="ico-rat"
+              />
+            </div>
+            <div class="skills-block">
+              <img src="./assets/Ai.svg" alt="Illustrator" class="skills-ico" />
+              <span class="ico-text">Adobe Illustrator</span>
+              <img
+                src="./assets/ratingILL.svg"
+                alt="Adobe Illustrator rating"
+                class="ico-rat"
+              />
+            </div>
+            <div class="skills-block">
+              <img
+                src="./assets/Ae.svg"
+                alt="After Efects"
+                class="skills-ico"
+              />
+              <span class="ico-text">Adobe After Efects</span>
+              <img
+                src="./assets/ratingAE.svg"
+                alt="After Efects rating"
+                class="ico-rat"
+              />
+            </div>
+            <div class="skills-block">
+              <img src="./assets/Figma.svg" alt="Figma" class="skills-ico" />
+              <span class="ico-text">Figma</span>
+              <img
+                src="./assets/ratingFigma.svg"
+                alt="Figma rating"
+                class="ico-rat"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio section -->
+      <section id="portfolio" class="portfolio">
+        <div class="wrapper portfolio-wrapper">
+          <h2 class="portfolio-title">Portfolio</h2>
+          <!-- img -->
+          <div class="img-wrapper">
+            <img
+              src="./assets/Fashion-Store.jpg"
+              alt="fashion"
+              class="portfolio-img"
+            />
+          </div>
+          <span class="portfolio-text"
+            >Online fashion store - <br />
+            Homepage</span
+          >
+          <!-- img -->
+          <div class="img-wrapper">
+            <img
+              src="./assets/reebok_web.jpg"
+              alt="reebook"
+              class="portfolio-img"
+            />
+          </div>
+          <span class="portfolio-text">Reebok Store - Concept</span>
+          <!-- img -->
+          <div class="img-wrapper">
+            <img
+              src="./assets/braun-landing.jpg"
+              alt="braun"
+              class="portfolio-img"
+            />
+          </div>
+          <span class="portfolio-text">Braun Landing Page - Concept</span>
+        </div>
+      </section>
+      <!-- * Footer -->
+      <footer id="footer" class="footer">
+        <div class="wrapper footer-wrapper">
+          <h2 class="footer-title">Contacts</h2>
+          <p class="footer-text">
+            Want to know more or just chat? You are welcome!
+          </p>
+          <!-- btn -->
+          <button class="footer-btn" type="button">Send message</button>
+          <div class="link-wrapper">
+            <p class="footer-link">
+              <a class="linkedin" href="#"
+                ><img src="./assets/linkedin.svg" alt="linkedin"
+              /></a>
+            </p>
+            <p class="footer-link inst">
+              <a class="inst" href="#"
+                ><img src="./assets/instagram.svg" alt="instagram"
+              /></a>
+            </p>
+            <p class="footer-link behance">
+              <a class="behance" href="#"
+                ><img src="./assets/behance.svg" alt="behance"
+              /></a>
+            </p>
+            <p class="footer-link dribble">
+              <a class="dribble" href="#"
+                ><img src="./assets/dribbble.svg" alt="dribbble"
+              /></a>
+            </p>
+          </div>
+          <p class="f-footer">
+            Like me on <br> LinkedIn, Instagram, Behance, <br> Dribble
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

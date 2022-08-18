@@ -1,0 +1,148 @@
+.header-wrapper {
+  padding: 20px;
+  background: linear-gradient(-45deg, var(--c-wrapper), var(--c-gradient));
+}
+.homework-wrapper {
+  margin: 30px;
+}
+.homework-item {
+  list-style-type: decimal;
+}
+/* Logo */
+.logo {
+  display: inline-block;
+}
+.logo-img {
+  width: 50px;
+}
+.logo-text {
+  font-size: 20px;
+  color: var(--c-green);
+}
+
+/* Navigation */
+.navigation {
+  display: inline-block;
+  margin-left: 200px;
+}
+.navigation-list {
+  list-style-type: none;
+  color: var(--c-yellow);
+}
+.navigation-item {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 16px;
+}
+.navigation-link {
+  color: var(--c-yellow);
+}
+
+.navigation-link:hover {
+  color: var(--c-yellow-hover);
+}
+.navigation-link:visited {
+  color: var(--c-green);
+}
+
+/* Info Section */
+.group {
+  display: inline-block;
+}
+.info {
+  width: 1093px;
+  display: inline-block;
+}
+.info-wrapper {
+  margin: 30px;
+}
+h1 {
+  color: var(--c-dark-green);
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: var(--c-pink);
+}
+.info-text {
+  margin-bottom: 20px;
+}
+.info-item {
+  list-style-type: decimal;
+}
+
+/* Aside */
+.aside {
+  background-color: var(--c-dark-green);
+  color: var(--c-white);
+  display: inline-block;
+  padding: 30px;
+  width: 250px;
+}
+.aside-title {
+  text-align: center;
+}
+.aside-item {
+  list-style-type: circle;
+}
+
+/* Iframe Section */
+iframe {
+  width: 600px;
+}
+.iframe {
+  display: inline-block;
+}
+.iframe-wrapper {
+  display: inline-block;
+}
+.review {
+  display: inline-block;
+}
+.review-block {
+  border: 2px solid var(--c-wrapper);
+  display: inline-block;
+  border-radius: 20px;
+  margin: 0 0 20px 30px;
+  padding: 10px;
+  width: 180px;
+}
+.review-title {
+  margin: 30px 0 10px 30px;
+}
+.review-img {
+  border-radius: 20px;
+  margin-left: 25px;
+}
+.review-text {
+  padding-bottom: 10px;
+}
+.review-person {
+  color: var(--c-yellow);
+}
+
+/* Article */
+.article-wrapper {
+  margin: 30px;
+}
+.article-text {
+  margin: 15px 0 30px 0;
+}
+.article-questions {
+  color: var(--c-green);
+}
+
+/* Location */
+.location-wrapper {
+  margin: 30px;
+}
+.map {
+  border-radius: 20px;
+}
+
+/* Footer */
+.footer-wrapper {
+  padding: 20px;
+  background: linear-gradient(-45deg, var(--c-wrapper), var(--c-gradient));
+}

@@ -1,0 +1,11 @@
+:root {
+  /* colors */
+  --c-bg-gray: #F6F6F6;
+  --c-black: #070707;
+  --c-white: #fff;
+  --c-text: #828282;
+  /* fonts */
+  --f-base: 18px;
+  --f-small: 14px;
+  --f-title: 34px;
+}
