@@ -33,20 +33,23 @@
   vertical-align: middle;
 }
 .button {
-  margin-left: 32px;
   padding: 13px 22px;
   font-weight: 700;
+  background-color: var(--c-orange);
+  color: var(--c-white);
+  border: 1px solid transparent;
+}
+.button:hover {
+  background-color: transparent;
+  border: 1px solid #bcd0e5;
+  color: var(--c-text);
 }
 .signin {
   margin-left: 190px;
-  background-color: transparent;
-  border: 1px solid #bcd0e5;
 }
 .signup {
-  background-color: var(--c-orange);
-  color: var(--c-white);
+  margin-left: 32px;
 }
-
 
 /* baner */
 .baner-wrapper {
@@ -77,7 +80,7 @@ h1 {
 .baner-btn {
   color: var(--c-white);
   background-color: var(--c-orange);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 13px 44px;
   font-weight: 700;
 }
