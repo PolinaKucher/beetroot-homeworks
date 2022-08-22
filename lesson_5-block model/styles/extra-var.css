@@ -1,0 +1,9 @@
+:root {
+  /* color */
+  --c-text: #2F281E;
+  --c-orange: #FF9900;
+  --c-white: #fff;
+  --c-baner-text: #544837;
+  /* font */
+  --f-base: 16px;
+}

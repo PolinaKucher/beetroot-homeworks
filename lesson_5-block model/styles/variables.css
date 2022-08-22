@@ -1,0 +1,20 @@
+:root {
+  /* colors */
+  --c-border: #2B81AC;
+  --c-background-lisbon: #3399CC;
+  --c-font: #fff;
+  --c-paris: #33CCCC;
+  --c-belgrade: #996699;
+  --c-venice: #C24747;
+  --c-telaviv: #E2674A;
+  --c-cair: #FFCC66;
+  --c-newyork: #99CC99;
+  --c-newdelhi: #669999;
+  --c-sanf: #CC6699;
+  --c-tokyo: #339966;
+  --c-sydney: #666699;
+  /* font */
+  --f-base: 22px;
+  --f-footer: 16px;
+  --f-icon: 42px;
+}

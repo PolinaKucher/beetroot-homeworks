@@ -8,16 +8,12 @@
   padding: 10px;
   background-color: var(--panel-c-blue);
 }
-.main-page-link {
+a {
+  margin-right: 20px;
   font-size: 16px;
+  text-decoration: none;
   color: var(--panel-c-white);
 }
-.main-page-link:hover {
+a:hover {
   color: var(--panel-c-dark-blue);
-}
-.main-page-link:visited {
-  color: var(--panel-c-violet);
-}
-a {
-  text-decoration: none;
 }

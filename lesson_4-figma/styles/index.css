@@ -26,6 +26,9 @@
 }
 
 /* home section */
+.home-wrapper {
+  height: 100vh;
+}
 h1 {
   margin: 12px 0 50px 0;
   font-size: 48px;

@@ -1,0 +1,92 @@
+/* app */
+.app {
+  background-color: var(--c-background-lisbon);
+  border: 20px solid var(--c-border);
+}
+.app-wrapper {
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 1170px;
+}
+/* header */
+.header-wrapper {
+  padding: 40px 0;
+}
+/* weather block */
+.weather-wrapper {
+  border: 1px solid var(--c-font);
+  text-align: center;
+  font-size: 0;
+}
+.weather-city {
+  display: block;
+  padding-bottom: 10px;
+}
+.weather-item {
+  opacity: 0.7;
+  font-size: var(--f-base);
+  display: inline-block;
+  border: 1px solid var(--c-font);
+  padding: 26px 10px;
+  width: 25%;
+}
+/* Li styles */
+.lisbon {
+  width: 50%;
+  background-color: var(--c-background-lisbon);
+}
+.paris {
+  background-color: var(--c-paris);
+}
+.belgrade {
+  background-color: var(--c-belgrade);
+}
+.venice {
+  background-color: var(--c-venice);
+}
+.tel-avive {
+  background-color: var(--c-telaviv);
+}
+.cair {
+  background-color: var(--c-cair);
+}
+.new-york {
+  background-color: var(--c-newyork);
+}
+.new-delhi {
+  background-color: var(--c-newdelhi);
+}
+.sanf {
+  background-color: var(--c-sanf);
+  width: 50%;
+}
+.tokyo {
+  background-color: var(--c-tokyo);
+}
+.sydney {
+  background-color: var(--c-sydney);
+  width: 100%;
+}
+.weather-temperature {
+  opacity: 0.7;
+}
+.wi {
+  font-size: var(--f-icon);
+  opacity: 0.7;
+}
+.wi-sunrise {
+  font-size: 27px;
+  opacity: 1;
+}
+.weather-item:hover {
+  opacity: 1;
+}
+
+
+/* Footer */
+.footer-wrapper {
+  padding: 40px 0 100px;
+}
+.footer-text {
+  font-size: var(--f-footer);
+}

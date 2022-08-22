@@ -10,6 +10,7 @@
   font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
+  /* border: 1px solid red; */
 }
 h1,
 h2,
@@ -21,8 +22,9 @@ h6 {
   margin: 0;
 }
 .lesson-link {
+  line-height: 1.25;
   text-decoration: none;
-  padding: 20px;
+  margin: 20px;
   color: var(--panel-c-blue);
 }
 .lesson-link:hover {
