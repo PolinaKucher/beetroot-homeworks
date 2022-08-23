@@ -55,7 +55,6 @@
   color: var(--c-text);
 }
 
-
 /* *Section baner */
 /* baner block */
 .baner-wrapper {
@@ -92,7 +91,6 @@ h1 {
   width: 100%;
   margin-left: 56px;
 }
-
 
 /* *Section about */
 .about-wrapper {
@@ -200,7 +198,6 @@ h5 {
   padding-left: 30px;
 }
 
-
 /* *Footer */
 .footer {
   border-top: 1px solid var(--c-light-blue);
@@ -251,4 +248,3 @@ input::-webkit-input-placeholder {
 input:hover {
   border: 1px solid var(--c-orange);
 }
-
