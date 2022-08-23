@@ -78,7 +78,10 @@
   font-size: 27px;
   opacity: 1;
 }
-.weather-item:hover {
+
+
+
+li:hover {
   opacity: 1;
 }
 

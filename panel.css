@@ -8,12 +8,12 @@
   padding: 10px;
   background-color: var(--panel-c-blue);
 }
-a {
+.link {
   margin-right: 20px;
   font-size: 16px;
   text-decoration: none;
   color: var(--panel-c-white);
 }
-a:hover {
+.link:hover {
   color: var(--panel-c-dark-blue);
 }
