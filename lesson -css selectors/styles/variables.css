@@ -1,0 +1,17 @@
+:root {
+  /* color */
+  --c-pink: #FF8984;
+  --c-odd: #88839E;
+  --c-even: #7A7593;
+  --c-hover: #625E77;
+  --c-checked: #9B96AC;
+  --c-white: #fff;
+  --c-black: #000;
+  --c-bg: #3B3F45;
+  --c-grey: #4A4F56;
+  /* font */
+  --f-base: 18px;
+  --f-small: 11px;
+  --f-header: 24px;
+  --f-header-sub: 16px;
+}

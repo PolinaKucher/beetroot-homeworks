@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.1s ease-in;
+  /* border: 1px solid  red; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--c-bg);
+  color: var(--c-white);
+  font-size: var(--f-base);
+  font-family: 'Roboto', sans-serif;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
