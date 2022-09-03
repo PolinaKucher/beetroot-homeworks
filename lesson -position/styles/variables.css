@@ -1,0 +1,16 @@
+:root {
+  /* colors */
+  --c-yellow:  #FFCF6D;
+  --c-gold: #fac439;
+  --c-red: #FF545B;
+  --c-dark-red: #e83e44; 
+  --c-grey: #808391;
+  --c-dark-grey: #414453; 
+  /* *Circles sizes */
+  --cs-big: 250px;
+  --cs-small: calc(var(--cs-big) / 2);
+  --cs-medium: calc(var(--cs-big) / 1.5);
+  /* transitions */
+  --t-rotate: 3s cubic-bezier(0.2, 1, 0.63, 1.38);
+  --t-normal: 0.75s cubic-bezier(.01,1,.63,1.38);
+}
