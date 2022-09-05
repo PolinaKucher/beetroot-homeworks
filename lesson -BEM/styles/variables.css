@@ -1,0 +1,18 @@
+:root {
+  /* Colors */
+  --c-white: #fff;
+  --c-dark: #3C3C3C;
+  --c-black: #282528;
+  --c-blue: #18B5DC;
+  --c-light-blue: #5DCBE6;
+  --c-brown: #646464;
+  --c-grey: #DDDBDB;
+  --c-light-grey: #F6F6F6;
+  --c-border: #BDBDBD;
+  /* Fonts */
+  --f-base: 16px;
+  --f-link: 20px;
+  --f-title: 18px;
+  /* transition */
+  --t-normal: 0.75s cubic-bezier(.01,1,.63,1.38);
+}
