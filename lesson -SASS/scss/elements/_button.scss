@@ -1,0 +1,26 @@
+// TODO dont work
+// .button__text {
+//   @include font-face(
+//     "OpenSans",
+//     "../../fonts/opensans-bold",
+//     700,
+//     normal,
+//     eot woff2 woff ttf svg
+//   );
+// }
+
+.button {
+  border: 1px solid $c-yellow;
+  background-color: $c-white;
+  font-size: em(14);
+  padding: 0 10px;
+  height: 24px;
+  &__text {
+    color: $c-dark-grey;
+    font-weight: 700;
+    font-family: "OpenSans";
+  }
+  &:hover &__text {
+    color: $c-yellow;
+  }
+}

@@ -1,0 +1,70 @@
+// TODO try grid +  grid-gap +grid-template-column
+.banner {
+  padding-bottom: 65px;
+  padding-top: 40px;
+  &__wrapper {
+    position: relative;
+    @include flex;
+  }
+  &__right-side {
+    border-left: 1px solid $c-yellow;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    display: flex;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+  }
+  // TODO remove this, check again
+  &__right-side__wrapper {
+    flex-direction: column;
+    max-width: 430px;
+    @include flex;
+  }
+  &__info {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  &__title {
+    color: $c-dark-grey;
+    line-height: em(42);
+    font-size: em(36);
+  }
+  &__line {
+    background-color: $c-yellow;
+    position: absolute;
+    max-width: 100px;
+    height: 1px;
+    width: 100%;
+    top: 90px;
+    left: 28%;
+  }
+  &__subtitle {
+    color: $c-dark-grey;
+    text-align: center;
+    font-size: em(24);
+    font-weight: 400;
+  }
+  &__list {
+    flex-direction: row;
+    display: flex;
+    gap: 5px;
+  }
+  &__text {
+    line-height: em(24);
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    padding: 50px 0;
+  }
+  &__underline {
+    height: 4px;
+    width: 50px;
+    border-top: 4px dashed $c-yellow;
+    position: absolute;
+    bottom: 50px;
+  }
+
+}

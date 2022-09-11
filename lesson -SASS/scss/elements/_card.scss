@@ -1,0 +1,37 @@
+.left-side {
+  &__wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
+  &__photo {
+    max-width: 400px;
+  }
+  &__angle {
+    @include size (100);
+    position: absolute;
+  }
+  &__angle-top-l {
+    border-left: 1px solid $c-yellow;
+    border-top: 1px solid $c-yellow;
+    left: -15px;
+    top: -15px;
+  }
+  &__angle-top-r {
+    border-right: 1px solid $c-yellow;
+    border-top: 1px solid $c-yellow;
+    right: -15px;
+    top: -15px;
+  }
+  &__angle-bottom-r {
+    border-bottom: 1px solid $c-yellow;
+    border-right: 1px solid $c-yellow;
+    bottom: -15px;
+    right: -15px;
+  }
+  &__angle-bottom-l {
+    border-bottom: 1px solid $c-yellow;
+    border-left: 1px solid $c-yellow;
+    bottom: -15px;
+    left: -15px;
+  }
+}

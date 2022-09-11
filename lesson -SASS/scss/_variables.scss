@@ -1,0 +1,21 @@
+// Colors
+$c-white: #fff;
+$c-black: #333;
+$c-dark-grey: #666;
+$c-grey: #898f8f;
+$c-light-grey: #ccc;
+$c-yellow: #ffcc00;
+
+// Font size
+$fs-base: 14;
+
+// Font family
+$ff-base: "Raleway", sans-serif;
+$ff-roboto: "Roboto", sans-serif;
+
+
+// Bezier
+$b-normal: cubic-bezier(0.01, 1, 0.63, 1.38);
+
+// Transition
+$t-normal: 0.45s $b-normal;

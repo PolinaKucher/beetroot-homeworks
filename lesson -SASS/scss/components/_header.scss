@@ -1,0 +1,38 @@
+.header {
+  &__wrapper {
+    flex-direction: column;
+    @include flex(true);
+    position: relative;
+    margin-top: 40px;
+    max-width: 450px;
+    height: 200px;
+  }
+  &__subtitle {
+    font-size: em(18);
+    color: $c-grey;
+  }
+  &__title {
+    font-size: em(60);
+    color: $c-yellow;
+  }
+  &__line {
+    background-color: $c-yellow;
+    position: absolute;
+    max-width: 210px;
+    height: 1px;
+    width: 100%;
+    top: 190px;
+  }
+  &__line_left {
+    left: 0;
+  }
+  &__line_right {
+    right: 0;
+  }
+  &__logo {
+    position: absolute;
+    max-width: 20px;
+    top: 180px;
+  }
+}
+

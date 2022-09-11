@@ -1,0 +1,12 @@
+// *Base
+@import './normalize';
+// TODO add costum font with this structure
+@import './variables';
+@import './mixins';   
+@import './fonts';
+@import './main';
+
+// *Elements 
+@import './elements/index';
+// *Components
+@import './components/index';

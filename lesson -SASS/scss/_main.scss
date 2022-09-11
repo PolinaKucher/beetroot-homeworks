@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: $t-normal;
+  // border: 1px solid red;
+}
+body {
+  background-color: $c-white;
+  color: $c-black;
+  font-family: $ff-base;
+  font-size: $fs-base + px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2 {
+  font-family: $ff-roboto;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.wrapper {
+  max-width: 1170px;
+  padding: 0 70px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+

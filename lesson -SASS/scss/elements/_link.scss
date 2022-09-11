@@ -1,0 +1,14 @@
+.banner__link {
+  @include flex(true);
+  @include size (30);
+  border: 2px solid $c-light-grey;
+  border-radius: 50%;
+  color: $c-light-grey;
+  &:hover {
+    color: $c-yellow;
+    border-color: $c-yellow;
+  }
+}
+.bi {
+  font-size: em(14);
+}

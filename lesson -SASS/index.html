@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <title>SCSS</title>
+    <!-- Local style -->
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../panel.css" />
+  </head>
+  <body>
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-wrapper">
+        <ul class="panel-list">
+          <il class="panel-item">
+            <a class="link" href="../index.html">На головну</a>
+          </il>
+        </ul>
+      </div>
+    </div>
+    <!-- App -->
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="wrapper header__wrapper">
+          <span class="header__subtitle">THE GENIUSES BEHIND OUR WORK</span>
+          <h1 class="header__title">OUR TEAM</h1>
+          <div class="line header__line header__line_left"></div>
+          <img class="header__logo" src="./assets/logo.svg" alt="Fire logo" />
+          <div class="line header__line header__line_right"></div>
+        </div>
+      </header>
+      <!-- Banner -->
+      <section class="banner">
+        <div class="wrapper banner__wrapper">
+          <div class="banner__left-side left-side">
+            <div class="left-side__wrapper">
+              <div class="left-side__angle left-side__angle-top-l"></div>
+              <div class="left-side__angle left-side__angle-top-r"></div>
+              <div class="left-side__angle left-side__angle-bottom-r"></div>
+              <div class="left-side__angle left-side__angle-bottom-l"></div>
+              <img
+                src="./assets/man.jpg"
+                alt="Sahariar Kabir"
+                class="banner__photo left-side__photo"
+              />
+            </div>
+          </div>
+          <div class="banner__right-side right-side">
+            <div class="banner__right-side__wrapper">
+              <div class="banner__info">
+                <h2 class="banner__title">Sahariar Kabir</h2>
+                <div class="line banner__line"></div>
+                <h3 class="banner__subtitle">Frontend Developer</h3>
+              </div>
+              <ul class="banner__list">
+                <li class="banner__item">
+                  <a href="#" class="banner__link"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </li>
+                <li class="banner__item">
+                  <a href="#" class="banner__link"
+                    ><i class="bi bi-twitter"></i
+                  ></a>
+                </li>
+                <li class="banner__item">
+                  <a href="#" class="banner__link"
+                    ><i class="bi bi-google"></i
+                  ></a>
+                </li>
+                <li class="banner__item">
+                  <a href="#" class="banner__link"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+              <p class="banner__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                cursus dui sit amet ligula efficitur, sit amet lacinia massa
+                dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus
+                placerat. Praesent rutrum eget massa a convallis. Nam vitae
+                augue malesuada, accumsan mauris ut, consectetur.
+                <div class="banner__underline"></div>
+              </p>
+              <button class="button banner__button">
+                <span class="button__text">VIEW PROFILE</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
