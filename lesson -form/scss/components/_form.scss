@@ -1,0 +1,44 @@
+.form {
+  &__wrapper {
+    padding: 35px;
+  }
+  &__item-wrapper{
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+  }
+  &__buttons {
+    margin-bottom: 20px;
+  }
+  &__button--small {
+    max-width: 150px;
+  }
+  &__info {
+    text-align: center;
+    line-height: em(18);
+    color: $c-mid-grey;
+    font-size: em(13);
+  }
+  &__footer {
+    border-top: 1px solid $c-border-grey;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  &__text {
+    color: $c-dark-grey;
+  }
+  &__photo {
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    height: 80px;
+    // width: 80px;
+    min-width: 80px;
+    max-width: 80px;
+  }
+}

@@ -1,0 +1,26 @@
+mixin profile(title)
+  form(action="#" method="get").form 
+    .form__wrapper
+      .form__head
+        h2.form__title=title
+      .form__content
+        .form__item-wrapper
+          .form__photo 
+            img(src="./assets/profile-photo.jpg", alt="#")
+          +file('Up to 1 MB (300x300 px)')
+          +button('', 'reset')
+        .form__item-wrapper
+          +formItem('Name', 'text', 'fullName', '', false, false, '', '')
+          +formItem('E-mail', 'email', 'email', '', false, false, '')
+        .form__item-wrapper
+          +formItem('Country', '', 'country', 'Select', false, true )
+          +formItem('City', 'text', 'city', '', false, false)
+        .form__item-wrapper
+          +formItem('Zip Code', 'password', 'password', '', false, false)
+          +formItem('Phone Number', 'tel', 'phone', '(000) 000-00-00', false, false, '', '')
+        .form__buttons
+          .form__button--small
+            +button('Update', 'button')
+
+
+
