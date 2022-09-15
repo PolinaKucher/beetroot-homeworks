@@ -1,0 +1,27 @@
+.arrow {
+  &__link {
+    color: $c-grey;
+    padding: 5px;
+    display: inline-block;
+    transition: $t-normal;
+    letter-spacing: 0.1em;
+    &:hover {
+      transform: translate(10px, 0);
+      color: $c-black;
+    }
+    &:hover .arrow__text {
+      display: inline-block;
+    }
+  }
+  &__arrow {
+    width: 24px;
+    height: 12px;
+  }
+  &__text {
+    display: none;
+    margin-right: 5px;
+    &--view {
+      margin-right: 5px;
+    }
+  }
+}

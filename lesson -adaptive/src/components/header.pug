@@ -1,0 +1,12 @@
+mixin header()
+  header.header 
+    .wrapper.header__wrapper
+      .header__logo
+        img(src="./assets/images/logo.svg", alt="logo")
+      .header__block
+        .header__navigation 
+          +navigation()
+        .header__search 
+          +search()
+        .header__burger 
+          +burger()

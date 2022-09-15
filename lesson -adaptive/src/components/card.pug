@@ -1,0 +1,9 @@
+mixin card(src, subtitle, data, title, info)
+  .card
+    img(src=src, alt="post photo").card__photo
+    .card__content 
+      .card__head 
+        span.card__text=subtitle
+        span.card__text=data
+      h3.card__title=title
+      p.card__info=info

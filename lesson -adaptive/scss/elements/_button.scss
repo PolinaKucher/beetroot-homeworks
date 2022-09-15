@@ -1,0 +1,16 @@
+.button {
+  bottom: 0;
+  left: 25%;
+  margin-top: 50px;
+  padding: 0 45px;
+  height: 46px;
+  background-color: $c-grey-darken;
+  border: none;
+  &__text {
+    color: $c-white;
+    font-weight: 700;
+  }
+  &:hover {
+    background-color: $c-grey-d-darken;
+  }
+}

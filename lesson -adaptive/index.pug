@@ -1,0 +1,75 @@
+//- Include
+include ./src/index
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    //- Favicon
+    link(rel="icon" href="../favicon.ico")
+    title Adaptive 
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css")
+    link(rel="stylesheet" href="./index.css")
+    //- Panel
+    link(rel="stylesheet" href="../panel.css")
+  body 
+    //- Panel
+    .pannel 
+      .panel-wrapper 
+        ul.panel-list
+          li.panel-item 
+            a(href="../index.html").link На головну
+    .app
+      +header()
+      section.banner 
+        .wrapper.banner__wrapper
+          h1.banner__title Manifest is a newborn theme. <br>Clean, simple and fast.
+      section.blog 
+        .wrapper.blog__wrapper
+          h1.blog__title Blog
+          .blog__article
+            img(src="./assets/images/image1.jpg" alt="#").blog__photo
+            +infoBlock()
+          .blog__article
+            +infoBlock()
+            img(src="./assets/images/image2.jpg" alt="#").blog__photo
+      section.blog 
+        .wrapper.blog__wrapper
+          .blog__head
+            h2.blog__head-title Latest Posts 
+            a(href="#").arrow.arrow__link 
+              span.arrow__text--view View All
+              img(src="./assets/images/arrow.svg" alt="arrow").arrow__arrow
+          .blog__posts
+            +card('./assets/images/image3.jpg', 'Interface Design', '8 June, 2020', 'UX traffic light colours', 'UI has to make a huge visual difference between warning, an alert and a success.')
+            +card('./assets/images/image1.jpg', 'Technology', '6 May, 2020', 'Using UX Design to Build a Sustainable Future', 'UI has to make a huge visual difference between warning, an alert and a success.')
+            +card('./assets/images/image4.jpg', 'Visual Design', '8 June, 2020', 'Creativity vs. UX', 'Is it possible to create a delightful user experience without following best UX practices?')
+      section.blog 
+        .wrapper.blog__wrapper
+          .blog__head
+            h2.blog__head-title The Most Popular
+            a(href="#").arrow.arrow__link 
+              span.arrow__text--view View All
+              img(src="./assets/images/arrow.svg" alt="arrow").arrow__arrow
+          .blog__posts
+            +card('./assets/images/image5.jpg', 'Interface Design', '8 June, 2020', 'Mentorship Match — How a simple LinkedIn feature can boost diversity', 'LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand')
+            +card('./assets/images/image6.jpg', 'Visual Design', '8 June, 2020', 'Creativity vs. UX', 'Is it possible to create a delightful user experience without following best UX practices?')
+          .blog__button
+            +button()
+      section.about 
+        .wrapper.about__wrapper
+          .about__head 
+            h3.about__title Full-time UI/UX designer <br/>Head of Design at VeronaLabs.com
+            a(href="#").arrow.arrow__link 
+                span.arrow__text Read More
+                img(src="./assets/images/arrow.svg", alt="arrow").arrow__arrow
+          .about__content 
+            p.about__text We work with clients around the world from our headquarters in Charleston, South Carolina. <br/><br/>We focus on naming, branding, brand narratives, website design and development, and brand experiences.
+      +footer()
+
+
+
+    //- Scripts
+    script(src="./index.js")

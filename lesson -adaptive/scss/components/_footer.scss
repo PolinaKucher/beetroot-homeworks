@@ -1,0 +1,45 @@
+.footer {
+  background-color: $c-grey-light;
+  &__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__contacts{
+    display: block;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: em(24);
+    color: $c-grey-darken;
+    border: 1px solid $c-grey-darken;
+    width: 50px;
+    height: 50px;
+    &:hover {
+      background-color: $c-grey-darken;
+      color: $c-white;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__copyright{
+    display: flex;
+    justify-content: center;
+    font-size: em(12);
+  }
+}
+i {
+  width: 24px;
+}

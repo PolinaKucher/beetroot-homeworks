@@ -1,0 +1,17 @@
+.navigation {
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+  &__link:hover::after {
+      transition: $t-normal;
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 1px;
+      background-color: $c-black;
+      bottom: -5px;
+      left: 24%;
+      align-items: center;
+    }
+}

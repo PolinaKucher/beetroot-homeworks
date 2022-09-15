@@ -1,0 +1,15 @@
+.info {
+  width: 50%;
+  padding: 20px;
+  &__title {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  &__data {
+    color: $c-grey;
+    letter-spacing: 0.1em;
+  }
+  &__text {
+    margin-top: 40px;
+  }
+}
