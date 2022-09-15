@@ -27,9 +27,9 @@
       padding-top: 20px;
       position: fixed;
       left: -100%;
-      top: 5rem;
+      top: 150px;
       flex-direction: column;
-      background-color: rgba($c-grey-light, 0.9);
+      background-color: $c-grey-light;
       width: 100%;
       text-align: center;
       transition: 0.3s;

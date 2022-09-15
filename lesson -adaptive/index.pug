@@ -29,9 +29,9 @@ html(lang="en")
       section.blog 
         .wrapper.blog__wrapper
           h1.blog__title Blog
-          .blog__article
-            img(src="./assets/images/image1.jpg" alt="#").blog__photo
+          .blog__article.blog__article--revers
             +infoBlock()
+            img(src="./assets/images/image1.jpg" alt="#").blog__photo
           .blog__article
             +infoBlock()
             img(src="./assets/images/image2.jpg" alt="#").blog__photo
@@ -46,7 +46,7 @@ html(lang="en")
             +card('./assets/images/image3.jpg', 'Interface Design', '8 June, 2020', 'UX traffic light colours', 'UI has to make a huge visual difference between warning, an alert and a success.')
             +card('./assets/images/image1.jpg', 'Technology', '6 May, 2020', 'Using UX Design to Build a Sustainable Future', 'UI has to make a huge visual difference between warning, an alert and a success.')
             +card('./assets/images/image4.jpg', 'Visual Design', '8 June, 2020', 'Creativity vs. UX', 'Is it possible to create a delightful user experience without following best UX practices?')
-      section.blog 
+      section.blog
         .wrapper.blog__wrapper
           .blog__head
             h2.blog__head-title The Most Popular
@@ -63,8 +63,8 @@ html(lang="en")
           .about__head 
             h3.about__title Full-time UI/UX designer <br/>Head of Design at VeronaLabs.com
             a(href="#").arrow.arrow__link 
-                span.arrow__text Read More
-                img(src="./assets/images/arrow.svg", alt="arrow").arrow__arrow
+              span.arrow__text Read More
+              img(src="./assets/images/arrow.svg" alt="arrow").arrow__arrow
           .about__content 
             p.about__text We work with clients around the world from our headquarters in Charleston, South Carolina. <br/><br/>We focus on naming, branding, brand narratives, website design and development, and brand experiences.
       +footer()
