@@ -1,0 +1,24 @@
+.socials {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__link {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid $c-grey-darken;
+    &:hover {
+      background-color: $c-grey-darken;
+    }
+    &:hover > .socials__svg {
+      color: $c-white;
+    }
+  }
+  &__svg {
+    color: $c-grey-darken;
+  }
+}
