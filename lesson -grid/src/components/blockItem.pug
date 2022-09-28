@@ -1,0 +1,16 @@
+
+mixin blockItem(text, data, img, name)
+  .block__item&attributes(attributes)= name
+    img.block__photo(src=img, alt="#")
+    .block__buttons 
+      button.block__button 
+        svg.icon.icon-icon.block__ico
+          use(xlink:href='#icon-Vector')
+      button.block__button 
+        svg.icon.icon-icon.block__ico
+          use(xlink:href='#icon-icon')
+
+
+    .block__subtitle
+      span.block__author=text 
+      span.block__data=data

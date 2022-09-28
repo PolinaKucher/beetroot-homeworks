@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+body {
+  background-color: $c-white;
+  font-family: $ff-roboto;
+  color: $c-black;
+  font-size: $fs-base + px;
+}
+h1 {
+  font-size: em(36);
+  font-family: $ff-delius;
+  letter-spacing: 0.05em;
+  text-align: center;
+  line-height: 45px;
+  // margin-top: 120px;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-left: 35px;
+  padding-right: 35px;
+}

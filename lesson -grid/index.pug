@@ -1,0 +1,52 @@
+include ./src/components/index
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    //- Favicon
+    link(rel="icon" href="../favicon.ico")
+    title Grid
+    //- Local style
+    link(rel="stylesheet" href="./index.css")
+    //- Panel
+    link(rel="stylesheet" href="../panel.css")
+  body 
+    //- SVG
+    include ./assets/symbol-defs.svg
+    //- Panel
+    .pannel 
+      .panel-wrapper 
+        ul.panel-list
+          li.panel-item 
+            a(href="../index.html").link На головну
+    .app
+      .wrapper
+        h1 Architectural Photography
+        .block 
+          +blockItem('Jezael Melgoza', '5 June 2020', './assets/image-1.jpg')(class='block__item--1')
+          +blockItem('Tom W', '30 March 2021', './assets/image-2.jpg')(class='block__item--2')
+          +blockItem('Johan Mouchet', '14 August 2019', './assets/image-3.jpg')(class='block__item--3')
+          +blockItem('Federico Di Dio', '29 October 2020', './assets/image-4.jpg')(class='block__item--4')
+          +blockItem('Casey Horner', '9 July 2021', './assets/image-5.jpg')(class='block__item--5')
+          +blockItem('Alexander Rotker', '22 April 2022', './assets/image-6.jpg')(class='block__item--6')
+        h1 Still Life Photography
+        .block--2
+          +blockItem('Robert Lukeman', '30 June 2020', './assets/image-7.jpg')(class='block__item--7')
+          +blockItem('Sean Oulashin', '5 September 2019', './assets/image-8.jpg')(class='block__item--8')
+          +blockItem('John Fowler', '10 August 2021', './assets/image-9.jpg')(class='block__item--9')
+          +blockItem('Dave Hoefler', '13 February 2021', './assets/image-10.jpg')(class='block__item--10')
+          +blockItem('Léonard Cotte', '5 September 2019', './assets/image-11.jpg')(class='block__item--11')
+          +blockItem('Rob Mulally', '30 May 2020', './assets/image-12.jpg')(class='block__item--12')
+        .block--3 
+          +blockItem('Pooja Chaudharyn', '30 June 2020', './assets/image-13.jpg')(class='block__item--13')
+          +blockItem('Dom Hill', '13 October 2021', './assets/image-14.jpg')(class='block__item--14')
+          +blockItem('Seth Doyle', '30 May 2020', './assets/image-15.jpg')(class='block__item--15')
+          +blockItem('devn', '30 June 2020', './assets/image-16.jpg')(class='block__item--16')
+          +blockItem('Noah Buscher', '13 February 2021', './assets/image-17.jpg')(class='block__item--17')
+          +blockItem('Seth Doyle', '30 June 2020', './assets/image-18.jpg')(class='block__item--18')
+          +blockItem('Sincerely Media', '7 January 2021', './assets/image-19.jpg')(class='block__item--19')
+          +blockItem('Melissa Askew', '29 April 2021', './assets/image-20.jpg')(class='block__item--20')
+          +blockItem('Brooke Cagle', '5 August 2019', './assets/image-21.jpg')(class='block__item--21')
+          +blockItem('Clem Onojeghuo', '1 July 2021', './assets/image-22.jpg')(class='block__item--22')
