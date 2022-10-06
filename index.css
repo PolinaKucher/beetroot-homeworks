@@ -3,6 +3,7 @@
   --panel-c-blue: #9cc1cf;
   --panel-c-violet: #f0eff8;
   --main-c-violet: #9790c9;
+  --main-c-dark-violet: #7a74a4;
   --panel-c-white: #fff;
 }
 * {
@@ -11,6 +12,14 @@
   padding: 0;
   margin: 0;
   /* border: 1px solid red; */
+}
+
+header {
+  background: radial-gradient(
+    circle,
+    rgba(122, 116, 164, 1) 0%,
+    rgba(156, 193, 207, 1) 33%
+  );
 }
 h1,
 h2,
@@ -22,7 +31,8 @@ h6 {
   margin: 0;
 }
 .lesson-link {
-  line-height: 1.25;
+  cursor: pointer;
+  line-height: 25px;
   text-decoration: none;
   margin: 20px;
   color: var(--panel-c-blue);
@@ -31,8 +41,14 @@ h6 {
   color: var(--main-c-violet);
 }
 h1 {
+  cursor: default;
   padding: 20px;
   color: var(--panel-c-white);
   margin-bottom: 20px;
-  background-color: #5a8596;
+}
+
+h2 {
+  cursor: default;
+  padding: 20px;
+  color: var(--main-c-dark-violet);
 }
