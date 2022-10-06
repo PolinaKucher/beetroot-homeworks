@@ -30,6 +30,9 @@ h6 {
   padding: 0;
   margin: 0;
 }
+ul {
+  list-style: none;
+}
 .lesson-link {
   cursor: pointer;
   line-height: 25px;
