@@ -4,6 +4,9 @@
   --panel-c-violet: #f0eff8;
   --panel-c-white: #fff;
 }
+ul {
+  list-style-type: none;
+}
 .panel-wrapper {
   padding: 10px;
   background-color: var(--panel-c-blue);
