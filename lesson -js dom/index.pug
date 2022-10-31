@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    //- Favicon
+    link(rel="icon" href="../favicon.ico")
+    title DOM
+    //- Style
+    link(rel="stylesheet" href="./index.css")
+    //- Panel
+    link(rel="stylesheet" href="../panel.css")
+  body 
+    //- Panel
+    .pannel 
+      .panel-wrapper 
+        ul.panel-list
+          li.panel-item 
+            a(href="../index.html").link На головну
+    .app#app
+      h1 JavaScript DOM
+      .wrapper#js-wrapper
+        ol.play-list#js-play-list
+        .traffic__lights
+          #red.traffic__light.traffic__red
+          #yellow.traffic__light
+          #green.traffic__light
+          button#btn.traffic__btn Click It
+    //- *Script
+    script(defer src="./index.js") 
