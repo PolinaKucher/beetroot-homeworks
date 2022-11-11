@@ -76,22 +76,35 @@ modalBtn.addEventListener("click", () => {
 });
 
 // Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
-const trafficLights = document.getElementsByClassName("traffic__light");
+const circles = document.getElementsByClassName("circle");
 
 const redlight = document.getElementById("red");
 const yellowlight = document.getElementById("yellow");
 const greenlight = document.getElementById("green");
 const trafficBtn = document.getElementById("btn");
 
+// trafficBtn.addEventListener("click", () => {
+//   if (redlight.classList.contains("traffic__red")) {
+//     redlight.classList.remove("traffic__red");
+//     yellowlight.classList.add("traffic__yellow");
+//   } else if (yellowlight.classList.contains("traffic__yellow")) {
+//     yellowlight.classList.remove("traffic__yellow");
+//     greenlight.classList.add("traffic__green");
+//   } else if (greenlight.classList.contains("traffic__green")) {
+//     greenlight.classList.remove("traffic__green");
+//     redlight.classList.add("traffic__red");
+//   }
+// });
+
+let lightsCounter = 0;
+
 trafficBtn.addEventListener("click", () => {
-  if (redlight.classList.contains("traffic__red")) {
-    redlight.classList.remove("traffic__red");
-    yellowlight.classList.add("traffic__yellow");
-  } else if (yellowlight.classList.contains("traffic__yellow")) {
-    yellowlight.classList.remove("traffic__yellow");
-    greenlight.classList.add("traffic__green");
-  } else if (greenlight.classList.contains("traffic__green")) {
-    greenlight.classList.remove("traffic__green");
-    redlight.classList.add("traffic__red");
+  console.log(lightsCounter)
+  circles[lightsCounter].classList.add('active');
+  circles[lightsCounter-1].classList.remove('active');
+  lightsCounter += 1;
+  if (lightsCounter === circles.length) {
+    lightsCounter = 0;
   }
+  
 });

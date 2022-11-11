@@ -66,18 +66,18 @@ button {
   box-shadow: 0 5px 80px -0.5px $c-cream;
 }
 
-.traffic {
+.circles {
   &__lights {
-  width: 100px;
-  height: 300px;
-  padding: 10px 0;
-  // padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  border-radius: 5px;
+    width: 100px;
+    height: 300px;
+    padding: 10px 0;
+    // padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-radius: 5px;
   }
   &__light {
     width: 60px;
@@ -99,5 +99,21 @@ button {
   }
   &__btn {
     text-transform: uppercase;
+  }
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: grey;
+  &.active {
+    background-color: #fdfd65;
+  }
+  &:first-child.active {
+    background-color: red;
+  }
+  &:last-child.active {
+    background-color: green;
   }
 }
