@@ -1,0 +1,50 @@
+<section class="features" id="features">
+  <div class="wrapper custom-wrapper">
+    <!-- *Head -->
+    <h2>How it works</h2>
+    <div class="subtitle">Quick overview of key features.</div>
+
+    <!-- *Swiper -->
+    <swiper class="slider" [config]="config">
+      <!-- Green card -->
+      <ng-template swiperSlide class="card card--green">
+        <svg class="icon card__icon icon-check">
+          <use xlink:href="#icon-check"></use>
+        </svg>
+        <h3 class="card__title">Create your own task</h3>
+        <p class="card__text">Add and remove tasks. Mark already completed.</p>
+      </ng-template>
+
+      <!-- Blue card -->
+      <ng-template swiperSlide class="card card--blue">
+        <svg class="icon card__icon icon-book-open">
+          <use xlink:href="#icon-book-open"></use>
+        </svg>
+        <h3 class="card__title">Read the blog</h3>
+        <p class="card__text">Read and save articles. All news in one place.</p>
+      </ng-template>
+
+      <!-- Orange card -->
+      <ng-template swiperSlide class="card card--orange">
+        <svg class="icon card__icon icon-chart-bar">
+          <use xlink:href="#icon-chart-bar"></use>
+        </svg>
+        <h3 class="card__title">Follow the statistic</h3>
+        <p class="card__text">
+          Keep track of tasks. Always be aware of the statistics.
+        </p>
+      </ng-template>
+    </swiper>
+
+    <!-- *Footer -->
+    <button
+      mat-raised-button
+      (click)="modal.openDialog('400ms', '500ms')"
+      matTooltip="Click to see the details"
+      matTooltipClass="tooltip"
+      class="button button--demo"
+    >
+      <span>Get demo</span>
+    </button>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<header>
+  <div class="wrapper container">
+    <!-- *Logo -->
+    <a href="#" class="logo">
+      <span class="logo__text">Be Pr</span>
+      <span class="logo__animate">o</span>
+      <span class="logo__text">d</span>
+      <span class="logo__animate">u</span>
+      <span class="logo__text">ctive</span>
+    </a>
+
+    <!-- *Block with nav and btns -->
+    <div class="block">
+      <!-- Navigation -->
+      <app-navigation
+        ngClass="hidden-mode"
+        [class.show-menu]="menuVar"
+        (click)="closeMenu()"
+      ></app-navigation>
+
+      <!-- Button -->
+      <button
+        mat-raised-button
+        (click)="modal.openDialog('400ms', '500ms')"
+        matTooltip="Click to subscribe"
+        matTooltipClass="tooltip"
+        type="button"
+        class="button button--black"
+      >
+        <span>Get Demo</span>
+      </button>
+
+      <!-- Burger -->
+      <button
+        class="burger"
+        (click)="openMenu()"
+        [class.burger--active]="burger"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+</header>

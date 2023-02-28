@@ -1,0 +1,146 @@
+// Custom Theming for Angular Material
+@use "@angular/material" as mat;
+// TODO(v15): As of v15 mat.legacy-core no longer includes default typography styles.
+//  The following line adds:
+//    1. Default typography styles for all components
+//    2. Styles for typography hierarchy classes (e.g. .mat-headline-1)
+//  If you specify typography styles for the components you use elsewhere, you should delete this line.
+//  If you don't need the default component typographies but still want the hierarchy styles,
+//  you can delete this line and instead use:
+//    `@include mat.legacy-typography-hierarchy(mat.define-legacy-typography-config());`
+@include mat.all-legacy-component-typographies();
+@include mat.legacy-core();
+
+$be-productive-primary: mat.define-palette(mat.$indigo-palette);
+$be-productive-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$be-productive-warn: mat.define-palette(mat.$red-palette);
+
+$be-productive-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $be-productive-primary,
+      accent: $be-productive-accent,
+      warn: $be-productive-warn,
+    ),
+  )
+);
+
+@include mat.all-legacy-component-themes($be-productive-theme);
+
+@import "./styles/index";
+@import "swiper/scss";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.agm-map-container-inner {
+  border-radius: 16px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.mat-expansion-panel-body {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  @media (max-width: 576px) {
+    padding: 0 14px !important;
+  }
+}
+
+.mdc-dialog .mdc-dialog__content {
+  padding: unset !important;
+}
+
+.cdk-overlay-pane {
+  width: auto !important;
+}
+
+mat-dialog-container {
+  border-radius: 50px !important;
+  height: fit-content !important;
+
+  @media (max-width: 768px) {
+    border-radius: 15px !important;
+  }
+
+}
+.mat-mdc-dialog-container .mdc-dialog__title {
+  font-weight: 600 !important;
+  letter-spacing: normal !important;
+  line-height: auto !important;
+}
+
+.mat-mdc-dialog-container .mdc-dialog__content {
+  font-weight: 400 !important;
+}
+
+.mdc-dialog__title {
+  flex-shrink: unset !important;
+  padding: unset !important;
+}
+
+.mat-mdc-dialog-surface {
+  border-radius: 53px !important;
+}
+
+.mat-dialog-actions {
+  padding: unset !important;
+  min-height: unset !important;
+  margin-bottom: unset !important;
+}
+
+.mat-dialog-title {
+  font: unset;
+  margin: unset !important;
+}
+
+.rec {
+  animation: spin 4.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: center;
+
+  &:nth-child(2n) {
+    animation: spin 3s infinite linear;
+  }
+  &:last-child {
+    animation: spin 7s infinite linear;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bubble {
+  fill: $c-black;
+  animation: bubble 7s infinite linear both;
+
+  &:first-child {
+    animation: bubble 0.5s infinite linear;
+  }
+  @keyframes bubble {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      fill: $c-blue;
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

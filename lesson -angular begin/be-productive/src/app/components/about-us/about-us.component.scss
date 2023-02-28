@@ -1,0 +1,27 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/media.scss";
+@import "../../../styles/figures.scss";
+@import "../../../styles/custom.scss";
+
+.about-us {
+  padding-top: 20px;
+  margin-top: -20px;
+}
+
+.img {
+  max-width: 280px;
+  border-radius: 15px;
+}
+
+.photos {
+  padding-right: 20px;
+  margin-top: 40px;
+  row-gap: 36px;
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  @include media("<=tablet") {
+    column-gap: 5px;
+    row-gap: 10px;
+  }
+}

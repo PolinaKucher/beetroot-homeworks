@@ -1,0 +1,87 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/media.scss";
+@import "../../../styles/main.scss";
+@import "../../../styles/custom.scss";
+
+:host(.hidden-mode) nav {
+  @include media("<=screen") {
+    background-color: rgba($c-white, $alpha: 0.99);
+    padding-right: 40px;
+    padding-left: 80px;
+    padding-top: 50px;
+    position: fixed;
+    right: -320px;
+    height: 100%;
+    top: 80px;
+  }
+
+  @include media("<=phone") {
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+    top: 40px;
+  }
+}
+
+:host(.show-menu) nav {
+  right: 0;
+}
+
+nav {
+  transition: $t-normal;
+  overflow: hidden;
+  z-index: 900;
+}
+
+:host(.column-mode) ul {
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  gap: 62px;
+
+  @include media("<=desktop") {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  @include media("<=phone") {
+    gap: 10px;
+  }
+}
+
+ul {
+  display: flex;
+  height: 100%;
+  gap: 40px;
+
+  @include media("<=screen") {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+a {
+  color: rgba($color: $c-mine-shaft, $alpha: 0.5);
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+
+  &:hover {
+    color: rgba($color: $c-mine-shaft, $alpha: 1);
+  }
+
+  @include media("<=tablet") {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0;
+  }
+  @include media("<=phone") {
+    font-size: 13px;
+  }
+}

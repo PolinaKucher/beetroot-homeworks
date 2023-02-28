@@ -1,0 +1,49 @@
+<section class="faq" id="faq">
+  <div class="wrapper custom-wrapper">
+    <!-- *Title -->
+    <h2>FAQ</h2>
+
+    <!-- *Cards -->
+    <mat-accordion class="cards">
+      <mat-expansion-panel
+        hideToggle
+        class="faq-card"
+        *ngFor="let card of cards"
+        [ngClass]="card.colorClass"
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+        #panel
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <button class="head" type="button" [ngClass]="card.colorClass">
+              <span class="title"> {{ card.title }} </span
+              ><svg *ngIf="panel.expanded" class="icon icon-minus icons">
+                <use xlink:href="#icon-minus"></use></svg
+              ><svg *ngIf="!panel.expanded" class="icon icon-plus icons">
+                <use xlink:href="#icon-plus"></use>
+              </svg>
+            </button>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="content">
+          <p class="text">
+            {{ card.text }}
+          </p>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <!-- *Background figures -->
+    <div class="circle circle--blue">
+      <div class="circle__inner"></div>
+    </div>
+    <div class="circle circle--green-2">
+      <div class="circle__inner"></div>
+    </div>
+    <div class="stroke stroke--5"></div>
+    <div class="stroke stroke--6"></div>
+    <div class="stroke stroke--7"></div>
+    <div class="stroke stroke--8"></div>
+  </div>
+</section>

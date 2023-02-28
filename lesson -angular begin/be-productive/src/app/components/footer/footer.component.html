@@ -1,0 +1,43 @@
+<footer>
+  <div class="wrapper container">
+    <!-- *Footer head -->
+    <div class="head">
+      <div>
+        <a href="#">
+          <svg class="icon icon-logo">
+            <use xlink:href="#icon-logo"></use></svg
+        ></a>
+        <a href="#" class="logo">
+          <span class="logo__text">Be Pr</span>
+          <span class="logo__animate">o</span>
+          <span class="logo__text">d</span>
+          <span class="logo__animate">u</span>
+          <span class="logo__text">ctive</span>
+        </a>
+      </div>
+
+      <!-- *Socials -->
+      <ul class="socials">
+        <li *ngFor="let item of socials">
+          <a [href]="item.link" class="link">
+            <svg [class]="item.svgClass">
+              <use attr.xlink:href="{{ item.svgHref }}"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <app-navigation ngClass="column-mode"></app-navigation>
+    </div>
+    <div class="map">
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="12"></agm-map>
+      <a
+        class="address"
+        href="https://www.google.com/maps/place/404+Miller+Ave,+South+San+Francisco,+CA+94080,+%D0%A1%D0%A8%D0%90/@37.6570128,-122.4146483,17z/data=!3m1!4b1!4m5!3m4!1s0x808f79a884758bd1:0x5c7c12d265eaea78!8m2!3d37.6570128!4d-122.4124596"
+        target="_blank"
+        >404 MILLER AVE SOUTH SAN FRANCISCO CA 94080-2704 USA</a
+      >
+    </div>
+  </div>
+</footer>

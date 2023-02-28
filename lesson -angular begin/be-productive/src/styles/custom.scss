@@ -1,0 +1,163 @@
+@import "./variables.scss";
+@import "./media.scss";
+
+.custom-wrapper {
+  margin-bottom: 240px;
+  margin-top: 120px;
+
+  @include media("<=desktop") {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 120px;
+  }
+}
+
+.button {
+  background-color: $c-white;
+  transition: $t-normal;
+  color: $c-mine-shaft;
+  border-radius: 60px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  height: 60px;
+  width: 220px;
+
+  @media (max-width: 576px) {
+    border-radius: 15px;
+    font-size: 14px;
+    width: 124px;
+    height: 40px;
+  }
+
+  &:hover {
+    background-color: $c-green;
+    color: $c-white;
+  }
+
+  &--black {
+    background-color: $c-black;
+    border-radius: 20px;
+    color: $c-white;
+    height: 40px;
+  }
+
+  &--blue {
+    background-color: $c-blue;
+    border-radius: 16px;
+    width: 165px;
+    color: $c-white;
+    height: 40px;
+
+    &:hover {
+      filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+      background-color: $c-blue;
+      opacity: 0.94;
+    }
+
+    @media (max-width: 576px) {
+      width: 150px;
+      height: 37px;
+    }
+  }
+}
+
+.tooltip {
+  filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 15px !important;
+  background-color: $c-white;
+  color: $c-green !important;
+  padding: 7px 15px !important;
+  font-size: 14px;
+  cursor: default;
+
+  &--blue {
+    border-radius: 15px !important;
+    background-color: $c-white;
+    border: 1px solid $c-blue;
+    color: $c-blue !important;
+  }
+
+  @media (max-width: 576px) {
+    border-radius: 10px !important;
+    font-size: 10px;
+  }
+}
+
+.subtitle {
+  margin-bottom: 36px;
+  line-height: 34px;
+  max-width: 730px;
+  font-size: 24px;
+  cursor: default;
+
+  @include media("<=screen") {
+    font-size: 20px;
+  }
+
+  @include media("<=desktop") {
+    margin-bottom: 16px;
+    text-align: center;
+    max-width: unset;
+  }
+
+  @media (max-width: 576px) {
+    line-height: 18px;
+    font-size: 14px;
+  }
+}
+
+.logo {
+  text-transform: uppercase;
+  color: $c-mine-shaft;
+  max-width: 212px;
+  font-weight: 800;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+
+  @include media("<=tablet") {
+    font-size: 20px;
+  }
+  @include media("<=phone") {
+    font-size: 14px;
+  }
+
+  &:hover {
+    & .logo__animate {
+      transform: rotate(360deg);
+      color: $c-green;
+    }
+  }
+
+  &__text {
+    white-space: nowrap;
+  }
+
+  &__animate {
+    transition: $t-transform;
+  }
+}
+
+.icon-logo {
+  transition: $t-normal;
+  color: $c-mine-shaft;
+  cursor: pointer;
+  font-size: 80px;
+
+  &:hover {
+    fill: $c-green;
+  }
+
+  @include media("<=desktop") {
+    display: none;
+  }
+}

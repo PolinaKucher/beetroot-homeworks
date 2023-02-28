@@ -1,0 +1,219 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/media.scss";
+@import "../../../styles/figures.scss";
+@import "../../../styles/custom.scss";
+
+.banner {
+  padding-top: 40px;
+  margin-top: -40px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 240px;
+  margin-top: 120px;
+  height: 100vh;
+
+  @include media("<=desktop") {
+    flex-direction: column;
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 0;
+  }
+
+  @include media("<=phone") {
+    margin-top: 80px;
+  }
+}
+
+.block {
+  @include media("<=desktop") {
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.photos {
+  height: 600px;
+  width: 100%;
+
+  @include media("<=tablet") {
+    height: 300px;
+  }
+}
+
+.photo {
+  max-width: 334px;
+  position: absolute;
+  border-radius: 30px;
+  transition: 0.4s ease-out;
+
+  &:hover {
+    transform: translateY(-20px);
+    transition: 0.6s ease-out;
+  }
+
+  &:hover ~ .banner__photo {
+    transition: 0.4s ease-out;
+  }
+
+  @media (max-width: 576px) {
+    border-radius: 15px;
+  }
+
+  &:first-child {
+    right: 290px;
+    filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 3;
+
+    &:hover {
+      filter: drop-shadow(15px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    @include media("<=screen") {
+      right: 240px;
+    }
+
+    @include media("<=desktop") {
+      width: 260px;
+      margin: auto;
+      top: 670px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+    @include media("<=tablet") {
+      width: 260px;
+      margin: auto;
+      top: 650px;
+    }
+
+    @media (max-width: 576px) {
+      top: 150px;
+      width: 146px;
+    }
+  }
+
+  &:nth-child(2n) {
+    right: 146px;
+    z-index: 2;
+    filter: blur(1px) brightness(75%)
+      drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
+
+    &:hover {
+      z-index: 3;
+      filter: drop-shadow(15px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    @include media("<=screen") {
+      right: 120px;
+    }
+
+    @include media("<=desktop") {
+      width: 240px;
+      left: -70px;
+      top: 450px;
+
+      &:hover {
+        width: 260px;
+        top: 445px;
+        left: 0px;
+      }
+    }
+
+    @include media("<=tablet") {
+      top: 440px;
+
+      &:hover {
+        transform: translateY(-25px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      width: 126px;
+      left: -30px;
+      top: 300px;
+
+      &:hover {
+        width: 146px;
+        top: 305px;
+      }
+    }
+  }
+
+  &:last-child {
+    right: 0px;
+    z-index: 1;
+    filter: blur(1px) brightness(55%) contrast(200%)
+      drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
+
+    &:hover {
+      z-index: 3;
+      filter: drop-shadow(-15px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    @include media("<=desktop") {
+      filter: blur(1px) brightness(75%)
+        drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
+      top: 450px;
+      width: 240px;
+      right: -70px;
+
+      &:hover {
+        width: 260px;
+        right: 0px;
+      }
+    }
+
+    @include media("<=tablet") {
+      top: 440px;
+    }
+
+    @media (max-width: 576px) {
+      width: 126px;
+      right: -30px;
+      top: 300px;
+
+      &:hover {
+        width: 146px;
+      }
+    }
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-weight: 600;
+  cursor: default;
+  font-size: 56px;
+
+  @include media("<=screen") {
+    font-size: 46px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 20px;
+  }
+
+  &--orange {
+    text-transform: uppercase;
+    color: $c-orange;
+    font-weight: 800;
+    font-size: 64px;
+
+    @include media("<=screen") {
+      font-size: 54px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 24px;
+    }
+  }
+}

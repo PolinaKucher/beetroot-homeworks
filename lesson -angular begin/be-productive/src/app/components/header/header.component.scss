@@ -1,0 +1,92 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/media.scss";
+@import "../../../styles/main.scss";
+@import "../../../styles/custom.scss";
+
+header {
+  background-color: $c-white;
+  color: $c-mine-shaft;
+  position: fixed;
+  z-index: 999;
+  height: 80px;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  @include media("<=phone") {
+    height: 40px;
+  }
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  width: 180px;
+  margin-left: 100px;
+
+  @include media("<=screen") {
+    display: none;
+  }
+}
+
+.burger {
+  background-color: transparent;
+  transition: $t-normal;
+  position: relative;
+  display: none;
+  border: none;
+  padding: 5px;
+
+  @include media("<=screen") {
+    display: block;
+    cursor: pointer;
+  }
+
+  &--active {
+    transform: rotate(270deg);
+    & > .bar {
+      transform: rotate(135deg);
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        transform: rotate(45deg);
+
+        @include media("<=phone") {
+          margin-top: -2px;
+        }
+      }
+    }
+  }
+}
+
+.bar {
+  width: 32px;
+  height: 2.5px;
+  display: block;
+  margin-bottom: 8px;
+  border-radius: 20px;
+  background-color: $c-black;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include media("<=phone") {
+    width: 18px;
+    margin-bottom: 4px;
+  }
+}

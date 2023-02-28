@@ -1,0 +1,112 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/media.scss";
+@import "../../../styles/figures.scss";
+@import "../../../styles/custom.scss";
+
+.features {
+  padding-top: 10px;
+  margin-top: -10px;
+}
+
+.slider {
+  margin-bottom: 32px;
+  display: grid;
+}
+
+.swiper-wrapper {
+  max-height: 100vh;
+  max-width: 100%;
+  min-height: 0;
+  min-width: 0;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  margin-top: 40px;
+  padding: 40px;
+  height: 300px;
+  width: 380px;
+
+  @include media("<=tablet") {
+    padding: 30px;
+  }
+
+  @media (max-width: 576px) {
+    width: 170px;
+    height: 200px;
+    padding: 12px;
+  }
+
+  &--green {
+    background-color: $c-green;
+  }
+
+  &--blue {
+    background-color: $c-blue;
+  }
+
+  &--orange {
+    background-color: $c-orange;
+  }
+
+  &__icon {
+    font-size: 70px;
+
+    @media (max-width: 576px) {
+      font-size: 32px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    text-align: center;
+
+    @include media("<=tablet") {
+      font-size: 20px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    border-top: 1px solid rgba($color: $c-white, $alpha: 0.2);
+    text-align: center;
+    padding-top: 28px;
+    line-height: 24px;
+    margin-top: 16px;
+    min-height: 77px;
+    font-weight: 300;
+    font-size: 20px;
+
+    @include media("<=tablet") {
+      min-height: 20px;
+    }
+
+    @media (max-width: 576px) {
+      padding-top: 8px;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+  }
+}
+
+.card--blue .card__text {
+  @include media("<=tablet") {
+    min-height: 100px;
+  }
+
+  @media (max-width: 576px) {
+    min-height: 57px;
+  }
+
+  @include media("<=phone") {
+    min-height: 81px;
+  }
+}

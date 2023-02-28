@@ -1,0 +1,90 @@
+<!-- *Modal 1 -->
+<div *ngIf="!active" class="modal-1">
+  <!-- Modal Head -->
+  <div class="head">
+    <h1 mat-dialog-title class="title">Keep in touch!</h1>
+    <button mat-button mat-dialog-close class="close" type="button">
+      <span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+
+  <!-- Photo -->
+  <mat-dialog-content class="content">
+    <svg class="icon icon-modal-2 photo">
+      <use xlink:href="#icon-modal-2"></use>
+    </svg>
+  </mat-dialog-content>
+
+  <!-- Footer -->
+  <mat-dialog-actions class="subscribe">
+    <button
+      mat-button
+      matTooltip="Click to subscribe"
+      matTooltipClass="tooltip--blue"
+      class="button button--blue"
+      type="button"
+      (click)="subscribe()"
+    >
+      <span>Subscribe</span>
+    </button>
+  </mat-dialog-actions>
+  <mat-dialog-actions class="counter">
+    <button mat-button class="num" type="button" [class.active]="!active">
+      1
+    </button>
+    <button mat-button class="num" type="button" (click)="subscribe()">
+      2
+    </button>
+  </mat-dialog-actions>
+</div>
+
+<!-- *Modal 2 -->
+<div *ngIf="active" class="modal-2" #formModal>
+  <!-- Head -->
+  <div class="head">
+    <h1 mat-dialog-title class="title">Let's get started!</h1>
+    <mat-dialog-actions>
+      <button mat-dialog-close mat-button class="close" type="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </mat-dialog-actions>
+  </div>
+
+  <!-- Photo and Form -->
+  <mat-dialog-content class="content">
+    <app-registration></app-registration>
+    <svg class="icon icon-modal-1 photo">
+      <use xlink:href="#icon-modal-1"></use>
+    </svg>
+  </mat-dialog-content>
+</div>
+
+<!-- *Modal 3 -->
+
+<!-- <div  class="modal-3" id="modal">
+  <div class="head">
+    <h1 mat-dialog-title class="title">Get demo</h1>
+    <button mat-button mat-dialog-close class="close" type="button" id="close">
+      <span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+  <mat-dialog-content class="content">
+    <svg class="icon icon-modal-3 photo">
+      <use xlink:href="#icon-modal-3"></use>
+    </svg>
+  </mat-dialog-content>
+  <mat-dialog-actions class="subscribe">
+    <a href="./assets/images/subscription.jpg" download="download">
+      <button
+        mat-button
+        matTooltip="Download cute pick."
+        matTooltipClass="tooltip--blue"
+        class="button button--blue"
+        type="button"
+      >
+        <span class="button__text">Download</span>
+      </button></a
+    >
+  </mat-dialog-actions>
+</div> -->

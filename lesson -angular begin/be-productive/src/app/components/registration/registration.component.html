@@ -1,0 +1,125 @@
+<form [formGroup]="form" class="form">
+  <!-- *First name -->
+  <label class="item">
+    <span class="title">First name</span>
+    <input
+      [type]="InputTypes.TEXT"
+      formControlName="firstName"
+      placeholder="Name"
+      [class.valid]="isControlValid('firstName')"
+      [class.invalid]="isControlInvalid('firstName')"
+    />
+    <div class="error" *ngIf="isControlInvalid('firstName')">
+      <ng-container *ngIf="form.controls['firstName']?.hasError('required')">
+        Please write your name
+      </ng-container>
+      <ng-container *ngIf="form.controls['firstName']?.hasError('minlength')">
+        Minimum length - 2 symbols
+      </ng-container>
+    </div>
+  </label>
+
+  <!-- *Last name -->
+  <label class="item">
+    <span class="title">Last name</span>
+    <input
+      [type]="InputTypes.TEXT"
+      formControlName="lastName"
+      placeholder="Last name"
+      [class.valid]="isControlValid('lastName')"
+      [class.invalid]="isControlInvalid('lastName')"
+    />
+    <div class="error" *ngIf="isControlInvalid('lastName')">
+      <ng-container *ngIf="form.controls['lastName']?.hasError('required')">
+        Please write your last name
+      </ng-container>
+      <ng-container *ngIf="form.controls['lastName']?.hasError('minlength')">
+        Minimum length - 2 symbols
+      </ng-container>
+    </div>
+  </label>
+
+  <!-- *Username -->
+  <label class="item">
+    <span class="title">Username</span>
+    <input
+      [type]="InputTypes.TEXT"
+      formControlName="username"
+      placeholder="Create username"
+      [class.valid]="isControlValid('username')"
+      [class.invalid]="isControlInvalid('username')"
+    />
+    <div class="error" *ngIf="isControlInvalid('username')">
+      <ng-container *ngIf="form.controls['username']?.hasError('required')">
+        Please create a username
+      </ng-container>
+      <ng-container *ngIf="form.controls['username']?.hasError('minlength')">
+        Minimum length - 2 symbols
+      </ng-container>
+    </div>
+  </label>
+
+  <!-- *E-mail -->
+  <label class="item">
+    <span class="title">E-mail</span>
+    <input
+      [type]="InputTypes.EMAIL"
+      formControlName="email"
+      placeholder="gunterfriz4536@gmail.com"
+      [class.valid]="isControlValid('email')"
+      [class.invalid]="isControlInvalid('email')"
+    />
+    <div class="error" *ngIf="isControlInvalid('email')">
+      <ng-container *ngIf="form.controls['email']?.hasError('required')">
+        Please enter your e-mail
+      </ng-container>
+      <ng-container *ngIf="form.controls['email']?.hasError('email')">
+        Should contain ...@your_mail.com
+      </ng-container>
+    </div>
+  </label>
+
+  <!-- *Password -->
+  <label class="item">
+    <span class="title">Password</span>
+    <input
+      [type]="InputTypes.PASSWORD"
+      formControlName="password"
+      [class.valid]="isControlValid('password')"
+      [class.invalid]="isControlInvalid('password')"
+    />
+    <div class="error" *ngIf="isControlInvalid('password')">
+      <ng-container *ngIf="form.controls['password']?.hasError('required')">
+        Please create a password
+      </ng-container>
+      <ng-container *ngIf="form.controls['password']?.hasError('pattern')">
+        Should contain min 4 symb. & number
+      </ng-container>
+      <ng-container *ngIf="form.controls['password']?.hasError('maxlength')">
+        No more than 8 symbols
+      </ng-container>
+    </div>
+  </label>
+
+  <div class="footer">
+    <!-- *Counter btn -->
+    <mat-dialog-actions class="counter">
+      <button class="num" type="reset" (click)="(active)">1</button>
+      <button class="num" type="button" [class.active]="!active">2</button>
+    </mat-dialog-actions>
+
+    <!-- *Submit btn -->
+    <mat-dialog-actions class="btn">
+      <button
+        mat-button
+        matTooltip="Save changes"
+        matTooltipClass="tooltip--blue"
+        class="button button--blue"
+        type="submit"
+        (click)="submit()"
+      >
+        <span>Next</span>
+      </button>
+    </mat-dialog-actions>
+  </div>
+</form>

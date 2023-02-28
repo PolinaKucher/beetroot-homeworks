@@ -1,0 +1,130 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/media.scss";
+@import "../../../styles/custom.scss";
+
+// *Form styles
+.form {
+  position: relative;
+  max-width: 350px;
+
+  @include media("<=desktop") {
+    max-width: none;
+  }
+}
+
+.footer {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+  width: 200%;
+
+  @include media("<=desktop") {
+    width: 90%;
+    position: unset;
+  }
+}
+
+.btn {
+  width: 120px;
+}
+
+.num {
+  color: rgba($color: $c-black, $alpha: 0.2);
+  transition: $t-normal;
+  margin-right: 10px;
+  font-weight: 600;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $c-black;
+  }
+
+  @include media("<=phone") {
+    font-size: 14px;
+  }
+}
+
+.active {
+  color: $c-black;
+}
+
+// *Form item styles
+.item {
+  font-family: $ff-base;
+
+  ::placeholder {
+    font-family: $ff-base;
+    color: $c-dark-grey;
+    font-weight: 400;
+    @include media("<=phone") {
+      font-size: 14px;
+    }
+  }
+}
+
+.title {
+  color: $c-black;
+
+  @include media("<=phone") {
+    font-size: 14px;
+  }
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  margin-top: 8px;
+  min-width: 300px;
+  margin-bottom: 4px;
+  padding-left: 10px;
+  border-radius: 16px;
+  padding-right: 10px;
+  background: transparent;
+  border: 1px solid $c-grey;
+
+  @include media("<=phone") {
+    min-width: auto;
+  }
+}
+
+input:focus {
+  border: none;
+  outline-color: $c-blue;
+  background-color: $c-white;
+}
+
+input:active {
+  background-color: white;
+}
+
+.error {
+  pointer-events: none;
+  font-size: 12px;
+  text-align: end;
+  color: $c-red;
+}
+
+.valid {
+  border: 2px solid $c-green;
+
+  &:focus {
+    outline-color: $c-green;
+  }
+}
+
+.invalid {
+  border: 2px solid $c-red;
+
+  &:focus {
+    outline-color: $c-red;
+  }
+}

@@ -1,0 +1,37 @@
+<section class="banner" id="banner">
+  <div class="wrapper">
+    <div class="block">
+      <!-- *Title -->
+      <h1 class="title">
+        <div>Manage your tasks easily with</div>
+        <div class="title--orange">Be Productive</div>
+      </h1>
+
+      <!-- *Button -->
+      <button
+        mat-raised-button
+        (click)="modal.openDialog('400ms', '500ms')"
+        matTooltip="Click to see the details"
+        matTooltipClass="tooltip"
+        type="button"
+        class="button"
+      >
+        <span>Get Demo</span>
+      </button>
+    </div>
+
+    <!-- *Photos -->
+    <div class="photos">
+      <img src="assets/images/app.jpg" alt="First app" class="photo" />
+      <img src="assets/images/app-2.jpg" alt="Second app" class="photo" />
+      <img src="assets/images/app-3.jpg" alt="Third app" class="photo" />
+    </div>
+
+    <!-- *Background figures -->
+    <div class="circle circle--green">
+      <div class="circle__inner"></div>
+    </div>
+    <div class="stroke stroke--1"></div>
+    <div class="stroke stroke--2"></div>
+  </div>
+</section>
